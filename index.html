@@ -1,138 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>西甲射手榜/总入球/点球</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="/templets/default/style/style.css" rel="stylesheet" media="screen" type="text/css" />
-<script language="javascript" type="text/javascript" src="/templets/default/js/jquery.js"></script>
+    <meta charset="UTF-8">
+    <title>排行榜</title>
+    <style type="text/css">
+    p {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .listBig {
+        width: 268px;
+        height: 445px;
+        border: 1px dotted #ccc;
+    }
+
+    .listBig .options {
+        width: 100%;
+        height: 33px;
+        line-height: 33px;
+        /*border:1px solid red;*/
+        padding-bottom: 5px;
+        position: relative;
+    }
+
+    .listBig .options .orders {
+        width: 19px;
+        height: 28px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .schoolMain {
+        height: 100%;
+        width: 223px;
+        position: absolute;
+        left: 28px;
+        top: 0;
+        right: 22px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .schoolName {
+        width: 150px;
+        height: 28px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .schoolName img {
+        height: 100%;
+        width: 28px;
+        float: left;
+    }
+
+    .schoolName p {
+        float: left;
+        margin-left: 7px;
+
+    }
+
+    .options .people {
+        width: 73px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .options .people p {
+        fla
+    }
+    </style>
 </head>
+
 <body>
-<div id="append_parent"></div>
-<div id="coeming_hd">
-        	<div class="comeing_wp">
-<div class="hdc cl"><h2><a href="/" title="098直播 "><img src="/template/comeing_news_04/comeing/logo.png" alt="098直播 " border="0"></a></h2>
-          			
-                    <div id="comeing_nv" class="cl">
-                      <ul class="cl z">
- <li class="first_a fc098" id="mn_portal"><a class="indexzb" href="/">直播</a>
- <ul id="p_popvideo" class="p_pop h_pop"><li class="indexzhibo" style="width:600px;"><a href="/zuqiuzhibo/" class="hidefocus">足球直播：</a><a href="/shijiebei/">世界杯</a><a href="/xijiazhibo/">西甲</a><a href="/yingchaozhibo/">英超</a><a href="/yijiazhibo/">意甲</a><a href="/dejiazhibo/">德甲</a><a href="/fajiazhibo/">法甲</a><a href="/ouzhoubei/">欧洲杯</a><a href="/zhongchaozhibo/">中超</a><a href="/ouguanzhibo/">欧冠</a><a href="/zuzongbei/">足总杯</a><a href="/zuqiuzhibo/Jliansaizhibo/">J联赛</a></li><li class="indexzhibo"><a href="/lanqiuzhibo/" class="hidefocus">篮球直播：</a><a href="/NBAzhibo/">NBA</a><a href="/CBAzhibo/">CBA</a></li><li class="indexzhibo"><a href="/tiyu/" class="hidefocus">体育直播：</a><a href="/aoyunhui/">奥运会</a><a href="/dianjing/">电竞</a></li></ul></li>
- <li class="fc098"><a href="/shipin/">视频</a>
- <ul id="p_popvideo" class="p_pop h_pop"><li class="indexzhibo" style="width:180px;"><a>足球：</a><a href="/zuqiushipin/">录像</a><a href="/zuqiujijin/">集锦</a><a href="/jdzuqiu/">经典</a></li><li class="indexzhibo"><a>篮球：</a><a href="/lanqiushipin/">录像</a><a href="/jdlanqiu/">经典</a></li></ul></li>
- <li class="fc098" ><a href="/live/">电视直播</a>
- <ul id="p_popvideo" class="p_pop h_pop"><li class="indexzhibo" style="width:400px;"><a>体育：</a><a href="/CCTV5/">CCTV5</a><a href="/CCTV5_/">CCTV5+</a><a href="/fengyunzuqiu/">风云足球</a><a href="/ouzhouzuqiu/">欧洲足球</a><a href="/beijingtiyu/">北京体育</a></li><li class="indexzhibo"><a href="/live/">更多</a></li></ul></li>
-	<li><a href="/bifen/" target="_blank">比分</a></li>
-	<li class="fc098"><a href="/jifen/">积分榜</a>
-	<ul id="p_popvideo" class="p_pop h_pop"><li><a href="/jifen/" target="_blank" class="hidefocus">积分榜</a></li><li><a href="/sheshou/" target="_blank">射手榜</a></li></ul></li>
-  <li><a href="/news/" target="_blank">新闻</a></li>
-<li id="mn_forum"><a href="https://bbs.098.com" target="_blank">098论坛<span>BBS</span></a></li>
-<div style="clear:both;"></div>
-                                                                                                  </ul>         
-                    </div>
-</div>
-</div>
-</div>
-<div class="comeing_wpbox" style="width: 100%; padding-top:85px;margin:0">
-</div>
-<div class="channel">
-<span id="jf1"></span>
-<div class="place"> <strong>当前位置:</strong> <a href='https://www.098.com/'>098直播</a> > <a href='/data/'>数据</a> > <a href='/sheshou/'>射手榜</a> >  </div>
-<div class="mainbody">
-<div id="div">
-<h4 class="data_t">西甲射手榜</h4>
-<div class="groups_tab_box">
-				<dl class="g_menu" id="menu">			
-				</dl>
-				<div class="clear"></div>
-		</div>
-		<table class="list_1" id="table" class="cell_data" >
-                <tbody><tr>
-                    <th class="rank">排名</th>
-                    <th class="player">球员</th>
-                    <th class="team">球队</th>
-                                            <th class="stat">进球数</th>
-                                    </tr></tbody>
-									<tbody id="livetable"><tr class="top_rank"><td class="top">1</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/5B/B7/rB8BO1_Rhb2ALZPOAAAbSfs1Xjs685.jpg">梅西</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>30(3)</td></tr><tr class="top_rank"><td class="top">2</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/9D/ChOxM1xC4DOACOkDAAAkkQuYMgI583.jpg">本泽马</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>23(1)</td></tr><tr class="top_rank"><td class="top">2</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/1A/35/rBUCgGDAYROABTFGAAAXoI3ydsA039.jpg">赫拉德-莫雷诺</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>23(10)</td></tr><tr><td class="top">4</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/ED/rB8CCl-qX8CAQJChAAAaexEQosw594.jpg">苏亚雷斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AGk3hAAATCnX1KbU043.png">马德里竞技</td><td>21(3)</td></tr><tr><td class="top">5</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/22/ChOxM1xC7ZmAfxhOAAAnrEvCaKU681.jpg">恩-内斯里</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>18</td></tr><tr><td class="top">6</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/1A/40/rBUESWDAexqAMBB7AAAbGGU8f2k998.jpg">伊萨克</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>17</td></tr><tr><td class="top">7</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/45/ChOxM1xC76GAJ1cZAAAhQpCrV9E025.jpg">阿斯帕斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAD-5mAAANAq6Y1ns233.png">塞尔塔</td><td>14(5)</td></tr><tr><td class="top">8</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/5B/C4/rB8CCl_RhzqAB3U2AAAcDeCa8dU730.jpg">格列兹曼</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>13(1)</td></tr><tr><td class="top">8</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D4/FB/ChNLkl1WcaWAEQ3xAAAeumDTU2s735.jpg">莫拉莱斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SGAFWe4AAAZti4VXLs391.png">莱万特</td><td>13</td></tr><tr><td class="top">8</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/92/rB8BO19QsLeAYmF5AAAbrk3n1u0973.jpg">拉法-米尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/97/rB8CCl9QqSSANKYAAABxevSgM4w393.png">韦斯卡</td><td>13(2)</td></tr><tr><td class="top">11</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/09/87/rB8CCl54iZWAJ4-WAAAZqSMjDBU394.jpg">基克</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAWxlMAAANaXUfArc037.png">埃瓦尔</td><td>12</td></tr><tr><td class="top">11</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D4/F6/ChMf8F1WX8-AEDkJAAAe-XKGq2Y949.jpg">马尔蒂</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SGAFWe4AAAZti4VXLs391.png">莱万特</td><td>12(2)</td></tr><tr><td class="top">11</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/E1/rB8BO1-qXX-AeYuiAAAWKYNRJng868.jpg">米纳</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAD-5mAAANAq6Y1ns233.png">塞尔塔</td><td>12(1)</td></tr><tr><td class="top">11</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/1A/35/rBUCgGDAYASADnciAAAZHfRbMS0376.jpg">马科斯-略伦特</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AGk3hAAATCnX1KbU043.png">马德里竞技</td><td>12</td></tr><tr><td class="top">15</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3E/1D/rB8CCl9W80SAGzZlAAAbubgOq3A708.jpg">布季米尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AXpkPAAAS36VZ32k951.png">奥萨苏纳</td><td>11</td></tr><tr><td class="top">15</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/69/ChOxM1xC8cSAHjTaAAAhbE5ZntM111.jpg">何塞卢</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/2D/D9/rB8CCl8jue2AA7GTAABUDxxvCAY997.png">阿拉维斯</td><td>11(2)</td></tr><tr><td class="top">15</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C8/3D/ChNLklxiVImASq4kAAAeBxFv888245.jpg">博尔哈-伊格莱西亚斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AewW-AAAQW9Zmr6U957.png">皇家贝蒂斯</td><td>11(5)</td></tr><tr><td class="top">15</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/1A/35/rBUCgGDAYNWAKTnoAAAcanQoFnM573.jpg">奥亚萨瓦尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>11(6)</td></tr><tr><td class="top">15</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/FF/ChOxM1xC66OAI_RpAAAh3NMb6sU003.jpg">索莱尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAJi7QAAAT-ffph3g243.png">瓦伦西亚</td><td>11(7)</td></tr><tr><td class="top">20</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/CC/rB8BO1-qEZ6AS8o9AAAZpMjYB9s619.jpg">索尔达多</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>9(2)</td></tr><tr><td class="top">20</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/EE/ChOxM1xC_HGAI38-AABsUCYjIh0274.png">安赫尔-科雷亚</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AGk3hAAATCnX1KbU043.png">马德里竞技</td><td>9</td></tr><tr><td class="top">20</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/DC/ChOxM1xC6ZCALjknAABejH3PEM8068.png">布赖斯-门德斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAD-5mAAANAq6Y1ns233.png">塞尔塔</td><td>9(1)</td></tr><tr><td class="top">23</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/D1/ChOxM1xC6PqACoTiAABtV0DZDk8259.png">内格雷多</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAJlcgAAAU28i9KCU258.png">加的斯</td><td>8</td></tr><tr><td class="top">23</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C8/E4/ChMf8FyR5WWALcv3AAAdqQhBSeo502.jpg">莫利纳</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>8</td></tr><tr><td class="top">23</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3E/F6/rB8CCl9aD36AK8RxAAAZEjivG6k083.jpg">卡纳莱斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AewW-AAAQW9Zmr6U957.png">皇家贝蒂斯</td><td>8(2)</td></tr><tr><td class="top">23</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/D6/rB8CCl-qBoSAaUymAAAamSBrBY8896.jpg">波图</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>8</td></tr><tr><td class="top">23</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/E7/AB/ChNLkl2upyKANAhfAAAbSZF1DBY867.jpg">阿莱士-贝伦格尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AJqdFAAA5Xt4A9QI166.png">毕尔巴鄂竞技</td><td>8</td></tr><tr><td class="top">28</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C9/B8/ChMf8FzRPJeAGfYaAAAbXFr36C0084.jpg">罗伯特-托雷斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AXpkPAAAS36VZ32k951.png">奥萨苏纳</td><td>7(4)</td></tr><tr><td class="top">28</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/E0/rB8BO1-qWzKAGD3vAAAdNCjGJ8w590.jpg">诺利托</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAD-5mAAANAq6Y1ns233.png">塞尔塔</td><td>7</td></tr><tr><td class="top">28</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D4/F6/ChMf8F1WYX2AKLw-AAAcqy4guLg142.jpg">梅莱罗</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SGAFWe4AAAZti4VXLs391.png">莱万特</td><td>7</td></tr><tr><td class="top">28</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/DB/rB8BO1-qTH-ADsAaAAAYZ87TgJo076.jpg">卢卡斯-博耶</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/96/rB8CCl9QpjSAR5D_AABSbdl9CSo299.png">埃尔切</td><td>7</td></tr><tr><td class="top">28</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/05/ChOxM1xC6_aAGHzgAAArxQdAe908432965">马克西-戈麦斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAJi7QAAAT-ffph3g243.png">瓦伦西亚</td><td>7</td></tr><tr><td class="top">28</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/1C/BC/rBUESWDIXh2AfJbXAAAbqjSRTt4596.jpg">若昂-菲利克斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AGk3hAAATCnX1KbU043.png">马德里竞技</td><td>7(1)</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/E0/ChOxM1xC6dqAWJGTAAAlYYAgVKQ894.jpg">奥雷利亚纳</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAc2jJAACaczwCFkQ504.png">巴拉多利德</td><td>6(4)</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/8A/ChOxM1xC9B2ALNadAAAqHErqE5o402.jpg">卡塞米罗</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>6</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/8D/rB8BO19QoyuAXeNvAAAWqSKi2zQ427.jpg">菲德尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/96/rB8CCl9QpjSAR5D_AABSbdl9CSo299.png">埃尔切</td><td>6(2)</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/1A/81/rBUESWDBfGuAH6FDAAAbfStdNi4816.jpg">卡拉斯科</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AGk3hAAATCnX1KbU043.png">马德里竞技</td><td>6</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/DA/A2/ChNLkl1nlQiATG8iAAAfh9MsAAE839.jpg">帕科</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>6(1)</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/EE/rB8CCl-qYR6AMqVmAAAXO_po21g344.jpg">魏斯曼</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAc2jJAACaczwCFkQ504.png">巴拉多利德</td><td>6</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3F/19/rB8BO19a5aqAR4vMAAAcfnfL2z4889.jpg">伊尼亚基-威廉斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AJqdFAAA5Xt4A9QI166.png">毕尔巴鄂竞技</td><td>6(1)</td></tr><tr><td class="top">34</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/CD/ChOxM1xC6LmAF0UQAAAdYsUF8js2254668">奥斯曼-登贝莱</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>6</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/98/ChOxM1xC36SANEoXAAAy7D4Ma7g409.jpg">莫德里奇</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/A6/ChOxM1xC4S-AKEkiAABtXQnMrzo512.png">劳尔-加西亚</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AJqdFAAA5Xt4A9QI166.png">毕尔巴鄂竞技</td><td>5(2)</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3F/24/rB8CCl9a5d-AZ9-DAAAZkPS-RTQ548.jpg">穆尼亚因</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AJqdFAAA5Xt4A9QI166.png">毕尔巴鄂竞技</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/DF/rB8CCl-qMhmAfcxUAAAdOzBl6_k400.jpg">安赫尔-罗德里格斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SKALKhvAAAdKnAObNc308.png">赫塔费</td><td>5(1)</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/5F/ChOxM1xC8QiAVU1FAAAs0osFIsE777.jpg">巴卡</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/09/7E/rB8BO154fuCAVno5AAAdsN3nvpE518.jpg">埃德加-门德斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/2D/D9/rB8CCl8jue2AA7GTAABUDxxvCAY997.png">阿拉维斯</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/AA/ChOxM1xC-BmAailQAABo3qQzeh4687.png">特略</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AewW-AAAQW9Zmr6U957.png">皇家贝蒂斯</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/AB/ChOxM1xC-CmAFlLyAAAl6a-p48s393.jpg">普拉诺</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAc2jJAACaczwCFkQ504.png">巴拉多利德</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/CA/83/ChNLkl0LUSiAGcZ1AAAYumdAGMY594.jpg">奥坎波斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>5(4)</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/FC/06/ChNLkl4hVkyAX_hrAAAaz9OmpbY264.jpg">达文-马奇斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/E0/rB8CCl-qMq2AHp7TAAAaDPMVXI8758.jpg">海梅-马塔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SKALKhvAAAdKnAObNc308.png">赫塔费</td><td>5(1)</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B7/22/ChOxM1xDAOWAX5Y9AAB0qrwZwDc858.png">桑德罗-拉米雷斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/97/rB8CCl9QqSSANKYAAABxevSgM4w393.png">韦斯卡</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/E2/ChOxM1xC-9eATLYUAAB1IIEH3yI177.png">卡莱里</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AXpkPAAAS36VZ32k951.png">奥萨苏纳</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/E8/ChOxM1xC_BiAVrUrAAAp-seIxFE587.jpg">贡萨洛-格德斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAJi7QAAAT-ffph3g243.png">瓦伦西亚</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/CE/ChOxM1xC6MOAL1HxAAAe4MlGWwE210.jpg">阿森西奥</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/00/B7/ChNLkl4-FmmAWLFFAAAaVDjsxDo738.jpg">路易斯-苏亚雷斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>5</td></tr><tr><td class="top">42</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3F/8D/rB8CCl9clqiAOZ_LAAAZKNtPpkU823.jpg">马努-巴列霍</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAJi7QAAAT-ffph3g243.png">瓦伦西亚</td><td>5</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/DC/rB8BO1-qUL-AIE4iAAAcZN6KBXg748.jpg">拉基蒂奇</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>4(2)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3F/82/rB8BO19cluGALDmMAAAWiq9RmHc673.jpg">加梅罗</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAJi7QAAAT-ffph3g243.png">瓦伦西亚</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/FF/ChOxM1xC66CAR6XVAABp6tCUv6c446.png">丹尼尔-沃斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAJi7QAAAT-ffph3g243.png">瓦伦西亚</td><td>4(1)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C9/15/ChMf8FyheMGAfcA_AAAbg0fVkis878.jpg">吕克-德容</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/09/7D/rB8BO154fQuAUXHAAAAd3WjP0dw702.jpg">卢卡斯-佩雷斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/2D/D9/rB8CCl8jue2AA7GTAABUDxxvCAY997.png">阿拉维斯</td><td>4(3)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D1/C3/ChMf8F1NK1aAa1T9AAAbg2K22E8791.jpg">加布里埃尔-保利斯塔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAJi7QAAAT-ffph3g243.png">瓦伦西亚</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/42/rB8CCl9PY6CAdBdtAAAbUI4lW-U950.jpg">亚历克斯-费尔南德斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAJlcgAAAU28i9KCU258.png">加的斯</td><td>4(2)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B7/02/ChOxM1xC_a2AATqPAABndpanfFM755.png">莫伊-戈麦斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>4(1)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/8D/rB8BO19QocmAV4AvAAAWZMXVZ08013.jpg">佩雷-米利亚</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/96/rB8CCl9QpjSAR5D_AABSbdl9CSo299.png">埃尔切</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3E/F6/rB8CCl9aEImAQPi8AAAdPC-M-7w173.jpg">费基尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AewW-AAAQW9Zmr6U957.png">皇家贝蒂斯</td><td>4(1)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D5/78/ChNLkl1X2FKAODz0AAAc2SA3vDE589.jpg">肯尼迪</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/FC/ChOxM1xC_TmAPpp0AAAnI38Tw1A559.jpg">贾努扎伊</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>4(3)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/19/CF/rBUESWC-7HmAYwy2AAAZ-wZcVS8966.jpg">于纳尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SKALKhvAAAdKnAObNc308.png">赫塔费</td><td>4(1)</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/D1/rB8BO19RvR2ATuDGAAAVhMl_8PI711.jpg">费尔南德斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/96/rB8CCl9QpjSAR5D_AABSbdl9CSo299.png">埃尔切</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/E5/A2/ChMf8F2homaAXKn1AAAa1Ej2Eng399.jpg">里奥哈</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/2D/D9/rB8CCl8jue2AA7GTAABUDxxvCAY997.png">阿拉维斯</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B7/12/ChOxM1xC_rSAOYXiAAAfOFvI1Yo326.jpg">穆尼尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3F/25/rB8CCl9a6G6AXkw-AAAeUsEAmZc486.jpg">比利亚利夫雷</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AJqdFAAA5Xt4A9QI166.png">毕尔巴鄂竞技</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/0D/ChOxM1xC7GaAHCtMAAAiZ-Cm1RU265.jpg">丘库埃泽</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/24/ChOxM1xC7ayAYn7HAAAbvZbtqZc858.jpg">德弗鲁托斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SGAFWe4AAAZti4VXLs391.png">莱万特</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3F/83/rB8BO19cmZWAaqrXAAAZCXC6hJI351.jpg">马拉尼昂</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAc2jJAACaczwCFkQ504.png">巴拉多利德</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/51/ChOxM1xC8E2Ab1wcAAAjYRCxMjc095.jpg">布赖恩-希尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAWxlMAAANaXUfArc037.png">埃瓦尔</td><td>4</td></tr><tr><td class="top">59</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/5B/B7/rB8BO1_RhqKANoQ1AAAZ6oiT-fU983.jpg">法蒂</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>4</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/FC/3F/ChMf8F4iy46AB1K5AAAfSpe4UvY225.jpg">亚历杭德罗-戈麦斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/CA/ChOxM1xC6GeADpKKAAAhgkTFxnc4852227">托尼-克罗斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs6/M00/1A/80/rBUCgGDBe9yAVOO3AAAan7pROqw982.jpg">阿扎尔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/2B/ChOxM1xC7iaADiq2AABvAuFDnkI370.png">帕雷霍</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/DD/rB8BO1-qUVuAI38zAAAY1AYLdjo603.jpg">费尔南多</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/3E/ChOxM1xC7zuAQYBxAAAomO_TdJM628.jpg">胡安-卡拉</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAJlcgAAAU28i9KCU258.png">加的斯</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/5B/C9/rB8CCl_RlMOAUJbBAAAb9LvWc8E531.jpg">阿尔巴</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/D6/rB8CCl-qBq6Ac7z_AAAZ30jvOyA166.jpg">威廉-若泽</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D4/8C/ChNLkl1VHneADcreAAAa-Z14ntI296.jpg">马略</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAD-5mAAANAq6Y1ns233.png">塞尔塔</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/09/80/rB8BO154g22ABStrAAAd9Q7j150674.jpg">恩里奇</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAWxlMAAANaXUfArc037.png">埃瓦尔</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/89/ChOxM1xC8_uAU84PAAAhhpjwWbk713.jpg">曼迪</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AewW-AAAQW9Zmr6U957.png">皇家贝蒂斯</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/C8/ChOxM1xC-piAXS2CAABg5Xemzmc497.png">热尔曼-桑切斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D5/91/ChMf8F1YCgaATvgPAAAaQLsYFIk626.jpg">卡里略</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/96/rB8CCl9QpjSAR5D_AABSbdl9CSo299.png">埃尔切</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B7/1D/ChOxM1xC__CAQv20AABiT0au34g611.png">安东尼奥-普埃尔塔斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/E9/rB8CCl-qUvqASaRpAAAZLgNNEvo774.jpg">苏索</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2ATzeYAAAYt05oZeQ154.png">塞维利亚</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/E5/A1/ChMf8F2hmY2AAn9DAAAaeiRjt0c326.jpg">布尔戈斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAWxlMAAANaXUfArc037.png">埃瓦尔</td><td>3(2)</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C9/B6/ChNLklzRPMCATf9xAAAaWR3vYOM769.jpg">鲁文-加西亚</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AXpkPAAAS36VZ32k951.png">奥萨苏纳</td><td>3(1)</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/DA/ChOxM1xC-42AGQKnAAB2K4PJHdI531.png">萨纳夫里亚</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AewW-AAAQW9Zmr6U957.png">皇家贝蒂斯</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/09/78/rB8BO154clqAEInAAAAdHOUKWwk083.jpg">乌奈-洛佩斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AJqdFAAA5Xt4A9QI166.png">毕尔巴鄂竞技</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/D4/rB8BO1-qMvyARF5cAAAbncEk4vQ092.jpg">阿兰巴里</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SKALKhvAAAdKnAObNc308.png">赫塔费</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/45/27/rB8BO19y3kyAD36kAAAZbxu1l3s784.jpg">劳尔-古蒂</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/96/rB8CCl9QpjSAR5D_AABSbdl9CSo299.png">埃尔切</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/E0/rB8CCl-qNIqAZ5AlAAAn8h1lbH0632.jpg">马克-库库雷利亚</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SKALKhvAAAdKnAObNc308.png">赫塔费</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/F9/ChOxM1xC606AL50IAAAhJLy6YWg486.jpg">费德里科-巴尔韦德</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/FC/0A/ChMf8F4hVg-AHeScAAAcxv04BEY477.jpg">扬格利-埃雷拉</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/87/ChOxM1xC2jeAKLcbAAAKBI6S6RU889.png">格拉纳达</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/5B/C8/rB8CCl_RkbOAF8zBAAAZ1XkSO6k955.jpg">弗朗基-德容</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/19/ChOxM1xC7RGAbv4JAAAfF6_AO3s030.jpg">贝尔特兰</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SCAD-5mAAANAq6Y1ns233.png">塞尔塔</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/5B/B7/rB8BO1_RhiKAGBtXAAAd1pNaf5k278.jpg">特林康</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/3A/ChOxM1xC7v6AfnGjAAAgDXqIhA8122.jpg">维尼修斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C8/E2/ChNLklyR72GADhfSAAAbwBnpNMQ816.jpg">罗伯托-洛佩斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/D7/rB8CCl-qChiAQez-AAAcC5Csd5Q444.jpg">耶雷米-皮诺</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C8/E4/ChMf8FyR75eAaYwbAAAcJfVkrt8645.jpg">巴雷内切亚</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/5B/C4/rB8CCl_RhmGAU5RDAAAdJDEhM5M811.jpg">佩德里</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAO0y3AAAVIBAG1T0205.png">巴塞罗那</td><td>3</td></tr><tr><td class="top">81</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/51/D8/rB8CCl-qDmyAEKwRAAAYQg5X_Rg301.jpg">尼尼奥</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AAt5wAAAXcqv7xdg149.png">比利亚雷亚尔</td><td>3</td></tr><tr><td class="top">114</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/98/ChOxM1xC352AcekPAAAhZvkFq88029.jpg">拉莫斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2RyAN-6QAAB1jvar4XU631.png">皇家马德里</td><td>2(2)</td></tr><tr><td class="top">114</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/C9/01/ChNLklycQCKAJQH-AAAc4jbl49o565.jpg">华金</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R6AewW-AAAQW9Zmr6U957.png">皇家贝蒂斯</td><td>2</td></tr><tr><td class="top">114</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/D5/79/ChMf8F1X1f6AMYlJAAAdk06a_bU713.jpg">大卫-席尔瓦</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R-Abx4AAAAf6eKe6ts725.png">皇家社会</td><td>2</td></tr><tr><td class="top">114</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/D5/ChOxM1xC6TKATCpwAAB83_QHPHg506.png">西奥瓦斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/97/rB8CCl9QqSSANKYAAABxevSgM4w393.png">韦斯卡</td><td>2</td></tr><tr><td class="top">114</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/3B/rB8BO19PYpGANjSkAAAWr3xvkLo604.jpg">阿尔瓦罗-希门尼斯</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2SOAJlcgAAAU28i9KCU258.png">加的斯</td><td>2</td></tr><tr><td class="top">114</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs4/M00/E1/99/ChMf8F2Ml7KAXUupAAAdAF_c4r8757.jpg">迭戈-科斯塔</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B5/7E/ChOxM1xC2R2AGk3hAAATCnX1KbU043.png">马德里竞技</td><td>2(1)</td></tr><tr><td class="top">114</td><td class="player"><img src="https://img1.dongqiudi.com/fastdfs3/M00/B6/45/ChOxM1xC76SAUPvIAAAuCGu-t4k929.jpg">费雷罗</td><td class="team"><img src="https://img1.dongqiudi.com/fastdfs5/M00/3C/97/rB8CCl9QqSSANKYAAABxevSgM4w393.png">韦斯卡</td><td>2</td></tr></tbody>
-									</table>
-
-</div>
-</div>
-<div class="sidebar">
-<div class="contentright-title">热门射手榜</div>
-<div class="nav-row2">
-<div class="xgnews">
-<li class="l1"><em>1</em><div><a href="/sheshou/yinchao.html">英超射手榜</a>  <a href="/jifen/yinchao.html">积分榜</a></div></li>
-<li class="l2"><em>2</em><div><a href="/sheshou/xijia.html">西甲射手榜</a>  <a href="/jifen/xijia.html">积分榜</a></div></li>
-<li class="l3"><em>3</em><div><a href="/sheshou/yijia.html">意甲射手榜</a>  <a href="/jifen/yijia.html">积分榜</a></div></li>
-<li class="l4"><em>4</em><div><a href="/sheshou/dejia.html">德甲射手榜</a>  <a href="/jifen/dejia.html">积分榜</a></div></li>
-<li class="l5"><em>5</em><div><a href="/sheshou/fajia.html">法甲射手榜</a>  <a href="/jifen/fajia.html">积分榜</a></div></li>
-<li class="l6"><em>6</em><div><a href="/sheshou/ouguan.html">欧冠射手榜</a>  <a href="/jifen/ouguan.html">积分榜</a></div></li>
-<li class="l7"><em>7</em><div><a href="/sheshou/zhongchao.html">中超射手榜</a>  <a href="/jifen/zhongchao.html">积分榜</a></div></li>
-<li class="l8"><em>8</em><div><a href="/sheshou/zhongjia.html">中甲射手榜</a>  <a href="/jifen/zhongjia.html">积分榜</a></div></li>
-<li class="l9"><em>9</em><div><a href="/sheshou/yingguan.html">英冠射手榜</a>  <a href="/jifen/yingguan.html">积分榜</a></div></li>
-<li class="l10"><em>10</em><div><a href="/sheshou/yiyi.html">意乙射手榜</a>  <a href="/jifen/yiyi.html">积分榜</a></div></li>
-<li class="l11"><em>11</em><div><a href="/sheshou/xiyi.html">西乙射手榜</a>  <a href="/jifen/xiyi.html">积分榜</a></div></li>
-<li class="l12"><em>12</em><div><a href="/sheshou/deyi.html">德乙射手榜</a>  <a href="/jifen/deyi.html">积分榜</a></div></li>
-<li class="l13"><em>13</em><div><a href="/sheshou/fayi.html">法乙射手榜</a>  <a href="/jifen/fayi.html">积分榜</a></div></li>
-<li class="l14"><em>14</em><div><a href="/sheshou/hejia.html">荷甲射手榜</a>  <a href="/jifen/hejia.html">积分榜</a></div></li>
-<li class="l15"><em>15</em><div><a href="/sheshou/puchao.html">葡超射手榜</a>  <a href="/jifen/puchao.html">积分榜</a></div></li>
-<li class="l16"><em>16</em><div><a href="/sheshou/echao.html">俄超射手榜</a>  <a href="/jifen/echao.html">积分榜</a></div></li>
-<li class="l17"><em>17</em><div><a href="/sheshou/oulian.html">欧联射手榜</a>  <a href="/jifen/oulian.html">积分榜</a></div></li>
-	
- </div>
-   <span id="q1"></span>
-    <span id="q2"></span>
+    <div class="listBig">
+        <div class="options">
+            <div class="orders">
+                <span>1.</span>
+            </div>
+            <div class="schoolMain">
+                <div class="schoolName">
+                    <img src="./logo.jpg">
+                    <p>学校名称</p>
+                </div>
+                <div class="people">
+                    <p>7000 <span>人观看</span></p>
+                </div>
+            </div>
         </div>
-</div>
-<div class="clear"></div></div>
-</div></div>
-<div id="closeall" style="display:none;"><a href="javascript:getggall();void(0);"><img id="ggselectimg" src="/templets/default/images/closeggall.png" ></a></div>
-<div id="ft" class=" comeing_ft1  cl"> 
-<p><strong><a href="https://www.098.com/">098直播</a> (闽ICP备14022091号-1)</strong>|<a href="https://www.098.com/zuqiuzhibo/" target="_blank">足球直播</a>|<a href="https://www.098.com/shipin/">足球集锦</a>|<a href=https://www.098.com/NBAzhibo/ target="_blank">篮球直播</a>|<a href="https://www.098.com/news/" target="_blank">足球新闻</a>|<a href="https://baike.098.com/" target="_blank">体育百科</a>|<a href="https://bbs.098.com/" target="_blank">098论坛</a>|<a href="https://www.098.com/sitemap.html" target="_blank">网站地图</a>|<a href="https://www.098.com/sitemap.xml" target="_blank">XML地图</a>|<a href="https://www.098.com/tag/" target="_blank">热门标签</a>|<a href="https://www.098.com/zhiboapi/" target="_blank">直播调用</a>|<a href="https://www.098.com/contact/" target="_blank">联系我们</a></p>
-<p><script src="https://s4.cnzz.com/z_stat.php?id=1257177995&web_id=1257177995" language="JavaScript"></script>
-<script type="text/javascript" src="//js.users.51.la/19824125.js"></script>
-<script>
-(function(){
-    var bp = document.createElement("script");
-    bp.src = "https://zz.bdstatic.com/linksubmit/push.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?caac6c83d951bd6d79107c15166a5692";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-098直播专注于做足球直播,篮球直播,体育直播等免费赛事直播,所有直播和视频链接均由网友提供，并链接到其他网站播放，如有异议，请与我们联系</p>
-</div>
-<div style="display:none;" id="rocket-to-top"><div style="opacity:0;display:block;" class="level-2"></div><div class="level-3"></div></div>
-
-
-<script language="javascript" src="/plus/global.php?aid=jf1&itype=id" type="text/javascript"></script>
-<script language="javascript" type="text/javascript">
-$(".nav-row2 li").each(function(){
-var str1=$(this).html();
-if(str1.indexOf("xijia")>0){
-$(this).addClass("current");
-}
-  });
-</script>
-<script language="javascript" type="text/javascript">
-$(".live_table .bs1tr:odd").addClass("tbg1");
-$(".live_table .bs1tr:even").addClass("tbg0");
-var lang = "gb";
-	var competitionid = "85";
-	var aid = "58135";
-	var dqdid = "7";
-</script>
-<script language="javascript" type="text/javascript" src="/templets/default/js/sheshou.js"></script>
-</body>
-</html>
+        <div class="options">
+            <div class="orders">
+                <span>1.</span>
+            </div>
+            <div class="schoolMain">
+                <div class="schoolName">
+                    <img src="./logo.jpg">
+                    <p>学校名称</p>
+                </div>
+                <div class="people">
+                    <p>7000 <span>人观看</span></p>
+                </div>
+            </div>
