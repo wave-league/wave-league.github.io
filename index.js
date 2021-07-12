@@ -1,21 +1,21 @@
 const initialPremierLeagueTeams = [
   {
     name: "ShiPeiTeam",
-    position: 1,
+    position: 2,
     points: 3,
-    goalsScored: 10,
-    gamesPlayed: 1,
-    goalsConceded: 8,
-    goalDifference: 2,
+    goalsScored: 21,
+    gamesPlayed: 2,
+    goalsConceded: 22,
+    goalDifference: -1,
   },
   {
     name: "LaoLiuTeam",
-    position: 2,
-    points: 0,
-    goalsScored: 8,
-    gamesPlayed: 1,
-    goalsConceded: 10,
-    goalDifference: -2,
+    position: 1,
+    points: 3,
+    goalsScored: 22,
+    gamesPlayed: 2,
+    goalsConceded: 21,
+    goalDifference: 1,
   },
 ];
 
