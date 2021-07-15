@@ -5,7 +5,7 @@ const initialPremierLeagueTeams = [
     points: 6,
     goalsScored: 33,
     gamesPlayed: 3,
-    goalsConceded: -30,
+    goalsConceded: 30,
     goalDifference: 3,
   },
   {
@@ -14,7 +14,7 @@ const initialPremierLeagueTeams = [
     points: 3,
     goalsScored: 30,
     gamesPlayed: 3,
-    goalsConceded: -33,
+    goalsConceded: 33,
     goalDifference: -3,
   },
 ];
