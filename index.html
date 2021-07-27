@@ -26,8 +26,9 @@
 }
     </style>
     <script type="text/javascript">
+        //Jump directly to the specified position
         function moveTo(height){
-          document.write(height);
+          alert(height);
         }
     </script>
     </head>
@@ -36,6 +37,10 @@
             <form>
                 <input name="积分榜" type="button" value="积分榜" onclick="moveTo(8)"/>
                 <input name="射手榜" type="button" value="射手榜" onclick="moveTo(16)"/>
+                <select name-"season">
+                    <option>7月赛季</option>
+                    <option>8月赛季</option>
+                    <option>9月赛季</option>
             </form>
         </div>
         <table>
