@@ -25,9 +25,19 @@
                 top:100px;
 }
     </style>
+    <script type="text/javascript">
+        function moveTo(height){
+          assert(height);
+        }
+    </script>
     </head>
     <body>
-        <div id="div1"></div>
+        <div id="div1">
+            <form>
+                <input name="积分榜" type="button" value="积分榜" onclick="moveTo(8)"/>
+                <input name="积分榜" type="button" value="积分榜" onclick="moveTo(16)"/>
+            </form>
+        </div>
         <table>
             <tr>
                 <td align="center">
