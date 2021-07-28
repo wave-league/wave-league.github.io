@@ -27,16 +27,16 @@
     </style>
     <script type="text/javascript">
         //Jump directly to the specified position
-        function moveTo(height){
-          alert(height);
+        function moveTo(position){
+          window.location.hash="position";
         }
     </script>
     </head>
     <body>
         <div id="div1">
             <form>
-                <input name="积分榜" type="button" value="积分榜" onclick="moveTo(8)"/>
-                <input name="射手榜" type="button" value="射手榜" onclick="moveTo(16)"/>
+                <input name="积分榜" type="button" value="积分榜" onclick="moveTo(#leagueTable)"/>
+                <input name="射手榜" type="button" value="射手榜" onclick="moveTo(#shooterList)"/>
                 <select name-"season">
                     <option>7月赛季</option>
                     <option>8月赛季</option>
@@ -52,7 +52,7 @@
             </tr>
         </table>
         <h2 align="center">浪潮皇家联赛积分榜</h2>
-        <table border="0" width="800" >
+        <table border="0" width="800" id="leagueTable">
         <tr>
             <th align="center">球队名称</th>
             <th align="center">场次</th>
@@ -79,7 +79,7 @@
         </tr>
         </table>
         <h2 align="center">射手榜</h2>
-        <table  width="400" >
+        <table  width="400" id="shooterList">
         <tr>
             <th align="center">等级</th>
             <th align="center">射手</th>
