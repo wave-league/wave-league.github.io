@@ -27,16 +27,19 @@
     </style>
     <script type="text/javascript">
         //Jump directly to the specified position
-        function moveTo(position){
-          window.location.hash="position";
+        function moveToL(){
+          window.location.hash="#leagueTable";
+        }
+        function moveToS(){
+          window.location.hash="#shooterList";
         }
     </script>
     </head>
     <body>
         <div id="div1">
             <form>
-                <input name="积分榜" type="button" value="积分榜" onclick="moveTo(#leagueTable)"/>
-                <input name="射手榜" type="button" value="射手榜" onclick="moveTo(#shooterList)"/>
+                <input name="积分榜" type="button" value="积分榜" onclick="moveToL()"/>
+                <input name="射手榜" type="button" value="射手榜" onclick="moveToS()"/>
                 <select name-"season">
                     <option>7月赛季</option>
                     <option>8月赛季</option>
