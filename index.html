@@ -16,121 +16,164 @@
             {
                 background: #CEFFCE;
             }
-            #div1{
-                width:100px;
-                height:200px;
-                //border:2px red solid;
-                position:fixed;
-                left:5px;
-                top:100px;
-}
-    </style>
+            li {
+                list-style: none;
+            }
+            #menu{
+                position: fixed;
+                top: 100px;
+                left: 50%;
+                margin-left: 400px;
+                width: 50px;
+            }
+            #menu ul li a {
+                display: block;
+                margin: 5px 0;
+                font-size: 14px;
+                font-weight: bold;
+                color: #333;
+                width: 80px;
+                height: 50px;
+                line-height: 50px;
+                text-decoration: none;
+                text-align: center;
+            }
+            #menu ul li a:hover,
+            #menu ul li a.current {
+                color: #fff;
+                background: #0088bb;
+            }
+            
+        </style>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
-        //Jump directly to the specified position
-        function moveToL(){
-          window.location.hash="#leagueTable";
-    
-        }
-        function moveToS(){
-          window.location.hash="#shooterList";
-        }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var items = $("#content").find(".item");
+                var menu = $("#menu");
+                var top = $(document).scrollTop();
+                var currentId = ""; //滚动条现在所在位置的item id
+                items.each(function () {
+                    var m = $(this);
+                    //注意：m.offset().top代表每一个item的顶部位置
+                    if (top > m.offset().top -120) {
+                        currentId = "#" + m.attr("id");
+                        console.log(currentId); 
+                    } else {
+                        return false;
+                    }
+                });
+
+                var currentLink = menu.find(".current");
+                if (currentId && currentLink.attr("href") != currentId) {
+                    currentLink.removeClass("current");
+                    menu.find("[href=" + currentId + "]").addClass("current");
+                }
+                //console.log(currentId); 
+            });
+        });
+        
     </script>
     </head>
     <body>
-        <div id="div1">
-            <form>
-                <input name="积分榜" type="button" value="积分榜" onclick="moveToL()"/>
-                <input name="射手榜" type="button" value="射手榜" onclick="moveToS()"/>
-                <select name-"season">
-                    <option>7月赛季</option>
-                    <option>8月赛季</option>
-                    <option>9月赛季</option>
-                </select>
-            </form>
+        <div id="menu">
+            <ul>
+                <li><a href="#item1" >积分榜</a></li>
+                <li><a href="#item2" >射手榜</a></li>        
+            </ul>
         </div>
+        
         <table>
             <tr>
                 <td align="center">
                     <img src="wave_img.jpg" width="800" />
                 </td>
             </tr>
-        </table>
-        <h2 align="center">浪潮皇家联赛积分榜</h2>
-        <table border="0" width="800" id="leagueTable">
-        <tr>
-            <th align="center">球队名称</th>
-            <th align="center">场次</th>
-            <th align="center">进球</th>
-            <th align="center">失球</th>
-            <th align="center">净胜球</th>
-            <th align="center">积分</th>
-        </tr>
-        <tr>
-            <td align="center">ShiPeiTeam</td>
-            <td align="center">5</td>
-            <td align="center">50</td>
-            <td align="center">-49</td>
-            <td align="center">1</td>
-            <td align="center">7</td>
-        </tr>
-        <tr>
-            <td align="center">LaoLiuTeam</td>
-            <td align="center">5</td>
-            <td align="center">49</td>
-            <td align="center">-50</td>
-            <td align="center">-1</td>
-            <td align="center">7</td>
-        </tr>
+        </table>    
+        <div id="content">
+        <div id="item1" class="item">
+            <h2 align="center">浪潮皇家联赛积分榜</h2>
+            <table border="0" width="800" >
+                <tr>
+                    <th align="center">球队名称</th>
+                    <th align="center">场次</th>
+                    <th align="center">进球</th>
+                    <th align="center">失球</th>
+                    <th align="center">净胜球</th>
+                    <th align="center">积分</th>
+                </tr>
+                <tr>
+                    <td align="center">ShiPeiTeam</td>
+                    <td align="center">5</td>
+                    <td align="center">50</td>
+                    <td align="center">-49</td>
+                    <td align="center">1</td>
+                    <td align="center">7</td>
+                </tr>
+                <tr>
+                    <td align="center">LaoLiuTeam</td>
+                    <td align="center">5</td>
+                    <td align="center">49</td>
+                    <td align="center">-50</td>
+                    <td align="center">-1</td>
+                    <td align="center">7</td>
+                </tr>
         
-        </table>
-        <h2 align="center">射手榜</h2>
-        <table  width="400" id="shooterList">
-        <tr>
-            <th align="center">等级</th>
-            <th align="center">射手</th>
-            <th align="center">进球数</th>
-        </tr>
-        <tr>
-            <td align="center">1</td>
-            <td align="center"><img src="LiuLJ.png" height="73" width="60"><img src="SunXL.png" height="73" width="60"></td>
-            <td align="center">13</td>
-        </tr>
-               
-        <tr>
-            <td align="center">2</td>
-            <td align="center"><img src="LaoLiu.jpg" height="73" width="60"></td>
-            <td align="center">9</td>
-        </tr>
-        <tr>
-            <td align="center">3</td>
-            <td align="center"><img src="WangY.jpg" height="73" width="60"><img src="WangH.jpg" height="73" width="60"></td>
-            <td align="center">6</td>
-        </tr>
-        <tr>
-            <td align="center">4</td>
-            <td align="center"><img src="ZhangWK.jpg" height="73" width="60"></td>
-            <td align="center">5</td>
-        </tr>
-        <tr>
-            <td align="center">4</td>
-            <td align="center"><img src="LiuHW.png" height="73" width="60"></td>
-            <td align="center">4</td>
-        </tr>
-           
+            </table>
+        </div>
+        <div id="item2" class="item">
+            <h2 align="center">射手榜</h2>
+            <table  width="800" >
+                <tr>
+                    <th align="center">等级</th>
+                    <th align="center">射手</th>
+                    <th align="center">进球数</th>
+                </tr>
+                <tr>
+                    <td align="center">1</td>
+                    <td align="center"><img src="LiuLJ.png" height="73" width="60"><img src="SunXL.png" height="73" width="60"></td>
+                    <td align="center">13</td>
+                </tr>
+                       
+                <tr>
+                    <td align="center">2</td>
+                    <td align="center"><img src="LaoLiu.jpg" height="73" width="60"></td>
+                    <td align="center">9</td>
+                </tr>
+                <tr>
+                    <td align="center">3</td>
+                    <td align="center"><img src="WangY.jpg" height="73" width="60"><img src="WangH.jpg" height="73" width="60"></td>
+                    <td align="center">6</td>
+                </tr>
+                <tr>
+                    <td align="center">4</td>
+                    <td align="center"><img src="ZhangWK.jpg" height="73" width="60"></td>
+                    <td align="center">5</td>
+                </tr>
+                <tr>
+                    <td align="center">4</td>
+                    <td align="center"><img src="LiuHW.png" height="73" width="60"></td>
+                    <td align="center">4</td>
+                </tr>
+                   
+                
+                <tr>
+                    <td align="center">5</td>
+                    <td align="center"><img src="XianW.jpg" height="73" width="60"></td>
+                    <td align="center">3</td>
+                </tr>
+                <tr>
+                    <td align="center">6</td>
+                    <td align="center"><img src="WangS.jpg" height="73" width="60"><img src="WanZCH.png" height="73" width="60">
+                        <img src="ShiP.jpg" height="73" width="60"><img src="ZhuH.jpg" height="73" width="60"><img src="YiK.jpg" height="73" width="60"></td>
+                    <td align="center">2</td>
+                </tr>
+                
+            
+                </table>
+        </div>
+        </div>
         
-        <tr>
-            <td align="center">5</td>
-            <td align="center"><img src="XianW.jpg" height="73" width="60"></td>
-            <td align="center">3</td>
-        </tr>
-        <tr>
-            <td align="center">6</td>
-            <td align="center"><img src="WangS.jpg" height="73" width="60"><img src="WanZCH.png" height="73" width="60">
-                <img src="ShiP.jpg" height="73" width="60"><img src="ZhuH.jpg" height="73" width="60"><img src="YiK.jpg" height="73" width="60"></td>
-            <td align="center">2</td>
-        </tr>
         
-    
-    </table>
     </body>
 </html>
